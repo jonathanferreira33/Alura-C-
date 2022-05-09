@@ -1,0 +1,8 @@
+C:\Users\Jonathan\source\repos\BankYellow\BankYellow\bin\Debug\BankYellow.exe.config
+C:\Users\Jonathan\source\repos\BankYellow\BankYellow\bin\Debug\BankYellow.exe
+C:\Users\Jonathan\source\repos\BankYellow\BankYellow\bin\Debug\BankYellow.pdb
+C:\Users\Jonathan\source\repos\BankYellow\BankYellow\obj\Debug\BankYellow.csproj.SuggestedBindingRedirects.cache
+C:\Users\Jonathan\source\repos\BankYellow\BankYellow\obj\Debug\BankYellow.csproj.CoreCompileInputs.cache
+C:\Users\Jonathan\source\repos\BankYellow\BankYellow\obj\Debug\BankYellow.exe
+C:\Users\Jonathan\source\repos\BankYellow\BankYellow\obj\Debug\BankYellow.pdb
+C:\Users\Jonathan\source\repos\BankYellow\BankYellow\obj\Debug\BankYellow.csproj.AssemblyReference.cache
