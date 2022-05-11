@@ -1,5 +1,6 @@
 ﻿using BankYellow.Funcionarios;
 using System;
+using System.Collections.Generic;
 
 namespace BankYellow
 {
@@ -7,48 +8,65 @@ namespace BankYellow
     {
         static void Main(string[] args)
         {
-            Titular jonathan = new Titular();
-            jonathan.Nome = "Jonathan";
-            jonathan.Profissao = "Dev";
-            jonathan.CPF = "12345678999";
-
-            ContaCorrente contaA = new ContaCorrente(0001, 1234);
-            contaA.Titular = jonathan;
-            contaA.setSaldo(15000.0);
-
-
-            Titular tainah = new Titular();
-            tainah.Nome = "Tainah";
-            tainah.Profissao = "Vendas";
-            tainah.CPF = "12345677799";
-
-            ContaCorrente contaB = new ContaCorrente(0001, 1235);
-            contaB.Titular = tainah;
-            contaB.setSaldo(1000.0);
-
-            contaB.Transferir(100.0, contaA);
-
-            Console.WriteLine(contaA.getSaldo());
-            Console.WriteLine(contaB.getSaldo());
-            Console.WriteLine(ContaCorrente.TotalDeContas);
-
-
-            Funcionario roberto = new Assistente("Roberto Carlos", "12345678999", 15000.0);
-            Funcionario nicole = new Diretor("Nicole Podestar", "12345678990", 10000.0);
-
-            Console.WriteLine(roberto.GetBonificacao());
-            Console.WriteLine(nicole.GetBonificacao());
-
             GerenciadorBonificacao gerenciador = new GerenciadorBonificacao();
 
-            gerenciador.Registrar(roberto);
-            gerenciador.Registrar(nicole);
-            Console.WriteLine($"Total de bonificações: {gerenciador.GetBonificacao()}");
+            criarTitulatesEContas();
+
+            var funcionarios = criarFuncionarios();
+            gerenciador.CalculaBonificacao(funcionarios);
+
+
+            Console.WriteLine($"Total de contas: {ContaCorrente.TotalDeContas}");
+
+            Console.WriteLine($"Total de funcionários: {Funcionario.TotalFuncionario}");
 
 
 
             Console.ReadLine();
 
         }
+
+        public static List<Funcionario> criarFuncionarios()
+        {
+            Funcionario roberto = new Assistente("Roberto Carlos", "12345678999");
+            Funcionario nicole = new Diretor("Nicole Podestar", "12345678990");
+            Funcionario jonathan = new Estagiario("Jonathan", "98765432100");
+
+            nicole.AumentarSalario();
+
+            List<Funcionario> funcionarios = new List<Funcionario>();
+            funcionarios.Add(roberto);
+            funcionarios.Add(nicole);
+            funcionarios.Add(jonathan);
+
+            return funcionarios;
+
+        }
+
+        public static void criarTitulatesEContas()
+        {
+            Titular jonathan = new Titular();
+            jonathan.Nome = "Jonathan";
+            jonathan.Profissao = "Dev";
+            jonathan.CPF = "12345678999";
+            ContaCorrente contaA = new ContaCorrente(0001, 1234);
+            contaA.setSaldo(15000.0);
+            contaA.Titular = jonathan;
+
+            Titular tainah = new Titular();
+            tainah.Nome = "Tainah";
+            tainah.Profissao = "Vendas";
+            tainah.CPF = "12345677799";
+            ContaCorrente contaB = new ContaCorrente(0001, 1235);
+            contaB.Titular = tainah;
+            contaB.setSaldo(1000.0);
+
+            List<Titular> titulares = new List<Titular>();
+            titulares.Add(jonathan);
+            titulares.Add(tainah);
+
+            //return titulares;
+        }
+        
     }
 }

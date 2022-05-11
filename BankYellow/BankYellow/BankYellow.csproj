@@ -46,6 +46,7 @@
     <Compile Include="ContaCorrente.cs" />
     <Compile Include="Funcionarios\Assistente.cs" />
     <Compile Include="Funcionarios\Diretor.cs" />
+    <Compile Include="Funcionarios\Estagiario.cs" />
     <Compile Include="Funcionarios\Funcionario.cs" />
     <Compile Include="GerenciadorBonificacao.cs" />
     <Compile Include="Program.cs" />
