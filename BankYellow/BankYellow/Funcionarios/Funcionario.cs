@@ -14,6 +14,9 @@ namespace BankYellow.Funcionarios
         //3 - diretor
         //private int _tipo;
         public string Nome { get; set; }
+
+
+
         public string CPF { get; private set; }
         public double Salario { get; protected set; } // protected modificador para ser acessivel pela classe + tipos derivados
 

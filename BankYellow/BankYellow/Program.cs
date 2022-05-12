@@ -1,4 +1,5 @@
 ﻿using BankYellow.Funcionarios;
+using BankYellow.Sistemas;
 using System;
 using System.Collections.Generic;
 
@@ -22,8 +23,17 @@ namespace BankYellow
 
 
 
+
             Console.ReadLine();
 
+        }
+
+        public static void UsarSistema()
+        {
+            SistemaInterno sistemaInterno = new SistemaInterno();
+
+            Diretor kaido = new Diretor("Kaido","45612378990");
+            kaido.Senha = "123456";
         }
 
         public static List<Funcionario> criarFuncionarios()
