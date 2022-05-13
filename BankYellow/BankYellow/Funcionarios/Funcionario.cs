@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BankYellow.Funcionarios
 {
-    internal abstract class Funcionario
+    public abstract class Funcionario
     {
         //0 - estagiario
         //1 - assistente
@@ -16,18 +16,16 @@ namespace BankYellow.Funcionarios
         public string Nome { get; set; }
 
 
-
         public string CPF { get; private set; }
         public double Salario { get; protected set; } // protected modificador para ser acessivel pela classe + tipos derivados
 
 
         public static int TotalFuncionario { get; private set; } 
 
-        public Funcionario(string nome, string cpf, double salario)
+        public Funcionario(string nome, string cpf)
         {
             Nome = nome;
             CPF = cpf;
-            Salario = salario;
 
             TotalFuncionario++;
         }

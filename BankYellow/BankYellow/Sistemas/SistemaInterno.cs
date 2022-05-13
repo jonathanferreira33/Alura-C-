@@ -9,7 +9,7 @@ namespace BankYellow.Sistemas
 {
     internal class SistemaInterno
     {
-        public bool Logar(Funcionario usuario, string senha) 
+        public bool Logar(FuncionarioAutenticavel usuario, string senha) 
         {
             bool UsuarioAutenticado = usuario.Autenticar(senha);
             if (UsuarioAutenticado)

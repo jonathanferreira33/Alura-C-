@@ -1,11 +1,12 @@
-﻿atualizado 
+﻿
 
 namespace BankYellow.Funcionarios
 {
     internal class Assistente : Funcionario
     {
-        public Assistente(string nome, string cpf) : base(nome, cpf, 3000.0) //base referece ao que foi declarado na classe base
+        public Assistente(string nome, string cpf) : base(nome, cpf) //base referece ao que foi declarado na classe base
         {
+            this.Salario = 3000.0;
         }
 
         public override double GetBonificacao()

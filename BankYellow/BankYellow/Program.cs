@@ -21,7 +21,7 @@ namespace BankYellow
 
             Console.WriteLine($"Total de funcionários: {Funcionario.TotalFuncionario}");
 
-
+            UsarSistema();
 
 
             Console.ReadLine();
@@ -34,6 +34,8 @@ namespace BankYellow
 
             Diretor kaido = new Diretor("Kaido","45612378990");
             kaido.Senha = "123456";
+
+            sistemaInterno.Logar(kaido, "123456");
         }
 
         public static List<Funcionario> criarFuncionarios()
@@ -41,6 +43,7 @@ namespace BankYellow
             Funcionario roberto = new Assistente("Roberto Carlos", "12345678999");
             Funcionario nicole = new Diretor("Nicole Podestar", "12345678990");
             Funcionario jonathan = new Estagiario("Jonathan", "98765432100");
+            ParceiroComercial tainah = new ParceiroComercial("Tainah", "12365498700");
 
             nicole.AumentarSalario();
 
@@ -48,6 +51,7 @@ namespace BankYellow
             funcionarios.Add(roberto);
             funcionarios.Add(nicole);
             funcionarios.Add(jonathan);
+            funcionarios.Add(tainah);
 
             return funcionarios;
 

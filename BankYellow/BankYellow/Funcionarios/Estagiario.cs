@@ -4,8 +4,9 @@ namespace BankYellow.Funcionarios
 {
     internal class Estagiario : Funcionario
     {
-        public Estagiario(string nome, string cpf) : base(nome, cpf, 2200.0)
+        public Estagiario(string nome, string cpf) : base(nome, cpf)
         {
+            this.Salario = 2200.0;
         }
 
         public override double GetBonificacao()
