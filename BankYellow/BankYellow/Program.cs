@@ -10,48 +10,70 @@ namespace BankYellow
         static void Main(string[] args)
         {
             GerenciadorBonificacao gerenciador = new GerenciadorBonificacao();
+            //var funcionarios = criarFuncionarios();
+            //gerenciador.CalculaBonificacao(funcionarios);
 
-            criarTitulatesEContas();
+            //criarTitulatesEContas();
+            //UsarSistema();
 
-            var funcionarios = criarFuncionarios();
-            gerenciador.CalculaBonificacao(funcionarios);
-
-
-            Console.WriteLine($"Total de contas: {ContaCorrente.TotalDeContas}");
-
-            Console.WriteLine($"Total de funcionários: {Funcionario.TotalFuncionario}");
-
-            UsarSistema();
+            Metodo(); // entender exceptions
 
 
             Console.ReadLine();
 
         }
 
+        private static void Metodo()
+        {
+            TestaDivisao(2);
+            TestaDivisao(0);
+        }
+
+        private static void TestaDivisao(int divisor)
+        {
+            int resultado = Dividir(10, divisor);
+            Console.WriteLine($"Resultado da divisão de 10 por {divisor} é igual {resultado} ");
+        }
+
+        private static int Dividir(int numero, int divisor)
+        {
+            return numero / divisor;
+        }
+
         public static void UsarSistema()
         {
             SistemaInterno sistemaInterno = new SistemaInterno();
 
-            Diretor kaido = new Diretor("Kaido","45612378990");
-            kaido.Senha = "123456";
+            ParceiroComercial tainah = new ParceiroComercial();
+            tainah.Senha = "1234";
+            tainah.Autenticar("1234");
 
-            sistemaInterno.Logar(kaido, "123456");
+
+            Diretor kaido = new Diretor("Kaido","45612378990");
+            kaido.Senha = "12345";
+            Console.WriteLine($"Senha Kaido = {kaido.Senha}");
+
+            sistemaInterno.Logar(kaido, "12345");
+            sistemaInterno.Logar(tainah, "1234");
         }
 
         public static List<Funcionario> criarFuncionarios()
         {
+
             Funcionario roberto = new Assistente("Roberto Carlos", "12345678999");
             Funcionario nicole = new Diretor("Nicole Podestar", "12345678990");
             Funcionario jonathan = new Estagiario("Jonathan", "98765432100");
-            ParceiroComercial tainah = new ParceiroComercial("Tainah", "12365498700");
+
+
 
             nicole.AumentarSalario();
+            Console.WriteLine($"Total de funcionários: {Funcionario.TotalFuncionario}");
 
             List<Funcionario> funcionarios = new List<Funcionario>();
             funcionarios.Add(roberto);
             funcionarios.Add(nicole);
             funcionarios.Add(jonathan);
-            funcionarios.Add(tainah);
+            //funcionarios.Add(tainah);
 
             return funcionarios;
 
@@ -74,6 +96,9 @@ namespace BankYellow
             ContaCorrente contaB = new ContaCorrente(0001, 1235);
             contaB.Titular = tainah;
             contaB.setSaldo(1000.0);
+
+            Console.WriteLine($"Total de contas: {ContaCorrente.TotalDeContas}");
+            Console.WriteLine($"Valor taxa: {ContaCorrente.TaxaOperacao}");
 
             List<Titular> titulares = new List<Titular>();
             titulares.Add(jonathan);

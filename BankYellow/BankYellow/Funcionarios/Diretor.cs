@@ -26,6 +26,10 @@ namespace BankYellow.Funcionarios
             Salario = Salario * 1.15;
         }
 
-  
+        public bool Autenticar(string senha)
+        {
+            return this.Senha == senha;
+        }
+
     }
 }

@@ -9,17 +9,17 @@ namespace BankYellow.Sistemas
 {
     internal class SistemaInterno
     {
-        public bool Logar(FuncionarioAutenticavel usuario, string senha) 
+        public bool Logar(IAutenticavel usuario, string senha) 
         {
             bool UsuarioAutenticado = usuario.Autenticar(senha);
             if (UsuarioAutenticado)
             {
-                Console.WriteLine("Bem vindo ao sistema");
+                Console.WriteLine($"Bem vindo ao sistema {usuario}");
                 return true;
             }
             else
             {
-                Console.WriteLine("Usuario incorreto");
+                Console.WriteLine("Senha incorreta");
                 return false;
             }
         }

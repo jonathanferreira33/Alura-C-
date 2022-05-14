@@ -8,6 +8,8 @@ namespace BankYellow
 {
     internal class ContaCorrente
     {
+        public static int TotalDeContas { get; private set; }
+        public static double TaxaOperacao { get; private set; }
 
         public int Numero { get; set; }
         public int Agencia { get; set; }
@@ -29,6 +31,8 @@ namespace BankYellow
             }
         }
 
+        private double Saldo;
+
         private double _limite;
         public double Limite
         {
@@ -41,18 +45,14 @@ namespace BankYellow
                 }
         }
 
-        public static int TotalDeContas { get; private set; }
-
-        private double Saldo;
-
         public Titular Titular;
 
         public ContaCorrente(int agencia, int numero)
         {
             Agencia = agencia;
             Numero = numero;
-
             TotalDeContas++;
+            TaxaOperacao = 30 / TotalDeContas;
         }
 
         public double getSaldo()
