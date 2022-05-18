@@ -1,6 +1,6 @@
 # Alura C#
 
-##Aprendizado:
+## Aprendizado:
 - Podemos criar diretórios na raiz de nosso projeto para organizar melhor o código!
 - O recurso de possíveis soluções do Visual Studio, acessível pelo atalho CTRL+PONTO;
 - Podemos ter vários métodos com o mesmo nome, desde que possuam lista de argumentos diferentes! Estas são as sobrecargas.
@@ -13,3 +13,7 @@
 - O modificador de acesso protected;
 - Preenchendo construtores da classe base a partir da classe derivada, com a sintaxe public Diretor(string cpf) : base(5000, cpf);
 - Classes e métodos abstratos!
+- As diferenças entre throw; e throw ex;;
+- Como a CLR preenche a propriedade StackTrace;
+- O padrão de inner exceptions;
+- O terceiro construtor que as exceções devem ter: (string mensagem, Exception excecaoInterna);
