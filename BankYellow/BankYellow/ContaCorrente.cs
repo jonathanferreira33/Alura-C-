@@ -9,12 +9,15 @@ namespace BankYellow
 {
     internal class ContaCorrente
     {
-        public static int TotalDeContas { get; private set; }
+        public static int ContadorDeTransferenciaNaoPermitidas { get; private set; }
+        public static int ContadorDeSaquesNaoPermitidos { get; private set; }
         public static double TaxaOperacao { get; private set; }
+        public static int TotalDeContas { get; private set; }
+        public int Agencia { get; } // sem o set tonar-se um campo de somente leitura
 
         public int Numero { get; }
 
-        public int Agencia { get; } // sem o set tonar-se um campo de somente leitura
+
 
         private double Saldo;
 
@@ -61,8 +64,11 @@ namespace BankYellow
 
             if (valor < 0) throw new ArgumentException("Valor inválido para saque", nameof(valor));
 
-            if (Saldo < valor) throw new SaldoInsuficienteException(this.Saldo, valor );
-
+            if (Saldo < valor)
+            {
+                ContadorDeSaquesNaoPermitidos++;
+                throw new SaldoInsuficienteException(this.Saldo, valor);
+            }
             Saldo -= valor;
         }
 
@@ -73,9 +79,17 @@ namespace BankYellow
 
         public void Transferir(double valor, ContaCorrente contaDestino)
         {
-            if (valor < 0) throw new ArgumentException("Valor inválido para transferência", nameof(valor));           
+            if (valor < 0) throw new ArgumentException("Valor inválido para transferência", nameof(valor));
 
-            this.Sacar(valor);
+            try
+            {
+                this.Sacar(valor);
+            }
+            catch (SaldoInsuficienteException ex)
+            {
+                ContadorDeTransferenciaNaoPermitidas++;
+                throw ex;
+            }
             contaDestino.Depositar(valor);
 
         }

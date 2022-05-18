@@ -26,6 +26,8 @@ namespace BankYellow
             }
             catch (SaldoInsuficienteException ex)
             {
+                Console.WriteLine($"Saldo atual: {ex.Saldo}");
+                Console.WriteLine($"Valor de saque: {ex.ValorSaque}");
                 Console.WriteLine(ex.Message);
                 Console.WriteLine($"Saldo insuficiente");
             }
