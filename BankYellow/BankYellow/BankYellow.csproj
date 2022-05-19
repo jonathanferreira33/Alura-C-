@@ -44,12 +44,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ContaCorrente.cs" />
+    <Compile Include="Exceptions\OperacaoFinanceiraExeception.cs" />
     <Compile Include="Exceptions\SaldoInsuficienteException.cs" />
     <Compile Include="Funcionarios\Assistente.cs" />
     <Compile Include="Funcionarios\Diretor.cs" />
     <Compile Include="Funcionarios\Estagiario.cs" />
     <Compile Include="Funcionarios\Funcionario.cs" />
     <Compile Include="GerenciadorBonificacao.cs" />
+    <Compile Include="LeitorDeArquivo.cs" />
     <Compile Include="ParceiroComercial.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

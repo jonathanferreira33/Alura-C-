@@ -88,7 +88,7 @@ namespace BankYellow
             catch (SaldoInsuficienteException ex)
             {
                 ContadorDeTransferenciaNaoPermitidas++;
-                throw ex;
+                throw new OperacaoFinanceiraExeception("Operação ñ realizada!", ex) ;
             }
             contaDestino.Depositar(valor);
 

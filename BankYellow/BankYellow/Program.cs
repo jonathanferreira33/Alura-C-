@@ -3,6 +3,7 @@ using BankYellow.Funcionarios;
 using BankYellow.Sistemas;
 using System;
 using System.Collections.Generic;
+using System.IO;
 
 namespace BankYellow
 {
@@ -14,7 +15,61 @@ namespace BankYellow
             //var funcionarios = criarFuncionarios();
             //gerenciador.CalculaBonificacao(funcionarios);
             //UsarSistema();
+            //TestaInnerException();
 
+            CarregarContas();
+
+            try
+            {
+                Metodo(); // entender exceptions
+            }
+            catch (NullReferenceException ex)
+            {
+                Console.WriteLine($"Aconteceu um erro: {ex.Message}");
+                //Console.WriteLine($"Aconteceu um erro: {ex.StackTrace}");
+
+            }
+            catch (DivideByZeroException)
+            {
+                Console.WriteLine("Impossivel realizar divisão por zero");
+            }
+
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+
+            Console.ReadLine();
+
+        }
+
+        private static void CarregarContas()
+        {
+            LeitorDeArquivo leitor = new LeitorDeArquivo("contas.txt");
+            LeitorDeArquivo leitor2 = null;
+            try
+            {
+                leitor.LerProximaLinha();
+                leitor.LerProximaLinha();
+                leitor.LerProximaLinha();
+            }
+            catch (FileNotFoundException)
+            {
+                Console.WriteLine("Exceção do tipo FileNotFoundException capturada");
+            }
+            catch (IOException)
+            {
+                Console.WriteLine("Exceção do tipo IOException capturada");
+            }
+            finally
+            {
+                if(leitor != null)
+                    leitor.Fechar();
+            }
+        }
+
+        public static void TestaInnerException()
+        {
             try
             {
                 criarTitulatesEContas();
@@ -31,29 +86,11 @@ namespace BankYellow
                 Console.WriteLine(ex.Message);
                 Console.WriteLine($"Saldo insuficiente");
             }
-
-            try
+            catch (OperacaoFinanceiraExeception ex)
             {
-                Metodo(); // entender exceptions
+                Console.WriteLine(ex.Message);
+                Console.WriteLine(ex.StackTrace);
             }
-            catch (NullReferenceException ex)
-            {
-                Console.WriteLine($"Aconteceu um erro: {ex.Message}");
-                //Console.WriteLine($"Aconteceu um erro: {ex.StackTrace}");
-
-            }
-            catch (DivideByZeroException)
-            {
-                Console.WriteLine("Impossivel realizar divisão por zero");
-            }
-          
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.ToString());
-            }
-
-            Console.ReadLine();
-
         }
 
         private static void Metodo()

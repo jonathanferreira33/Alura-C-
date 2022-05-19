@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace BankYellow.Exceptions
 {
-    internal class SaldoInsuficienteException : Exception
+    internal class SaldoInsuficienteException : OperacaoFinanceiraExeception
     {
 
         public double Saldo { get; }
@@ -27,5 +24,7 @@ namespace BankYellow.Exceptions
             Saldo = saldo;
             ValorSaque = valorSaque;
         }
+
+        public SaldoInsuficienteException(string message, Exception excecaoInterna) : base(message, excecaoInterna) { }
     }
 }
