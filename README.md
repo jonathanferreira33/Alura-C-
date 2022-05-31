@@ -24,3 +24,9 @@
 - O elemento <paramref/>;
 - O elemento <exception/>;
 - O elemento <see/>.
+
+- O que é o NuGet;
+- O comando Install-Package;
+- O tipo DateTime;
+- O tipo TimeSpan;
+- Conhecemos a biblioteca Humanizer.
