@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankYellow", "BankYellow\BankYellow.csproj", "{72439A87-5CCD-4FEE-B41E-A4E3BE6BE076}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ByteBank.SistemaAgencia", "ByteBank.SistemaAgencia\ByteBank.SistemaAgencia.csproj", "{CAB25DBC-BDF0-48D4-8CE4-E1B73877F656}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ByteBank.Models", "ByteBank.Models\ByteBank.Models.csproj", "{5E37E36B-77F7-4848-B898-7C99422C9A2C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{72439A87-5CCD-4FEE-B41E-A4E3BE6BE076}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{72439A87-5CCD-4FEE-B41E-A4E3BE6BE076}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{72439A87-5CCD-4FEE-B41E-A4E3BE6BE076}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{72439A87-5CCD-4FEE-B41E-A4E3BE6BE076}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAB25DBC-BDF0-48D4-8CE4-E1B73877F656}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAB25DBC-BDF0-48D4-8CE4-E1B73877F656}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAB25DBC-BDF0-48D4-8CE4-E1B73877F656}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAB25DBC-BDF0-48D4-8CE4-E1B73877F656}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E37E36B-77F7-4848-B898-7C99422C9A2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E37E36B-77F7-4848-B898-7C99422C9A2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E37E36B-77F7-4848-B898-7C99422C9A2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E37E36B-77F7-4848-B898-7C99422C9A2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

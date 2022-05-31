@@ -17,7 +17,7 @@ namespace ByteBank.Modelos.Funcionarios
             Salario *= 1.1;
         }
 
-        internal override double GetBonificacao() // tem q respeitar o modificador de acesso da classe base
+        protected internal override double GetBonificacao()
         {
             return Salario * 0.2;
         }

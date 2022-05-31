@@ -12,6 +12,8 @@ namespace ByteBank.SistemaAgencia
         static void Main(string[] args)
         {
             ContaCorrente conta = new ContaCorrente(001, 123456);
+            ContaCorrente conta2 = new ContaCorrente(0001, 123465);
+
         }
     }
 }

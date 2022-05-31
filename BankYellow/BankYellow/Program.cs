@@ -1,6 +1,4 @@
-﻿using BankYellow.Exceptions;
-using BankYellow.Funcionarios;
-using BankYellow.Sistemas;
+﻿
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -17,7 +15,10 @@ namespace BankYellow
             //UsarSistema();
             //TestaInnerException();
 
+
             CarregarContas();
+
+
 
             try
             {
@@ -45,27 +46,35 @@ namespace BankYellow
 
         private static void CarregarContas()
         {
-            LeitorDeArquivo leitor = new LeitorDeArquivo("contas.txt");
-            LeitorDeArquivo leitor2 = null;
-            try
+            using (LeitorDeArquivo leitor = new LeitorDeArquivo("teste.txt")) //using = try catch
             {
                 leitor.LerProximaLinha();
-                leitor.LerProximaLinha();
-                leitor.LerProximaLinha();
             }
-            catch (FileNotFoundException)
-            {
-                Console.WriteLine("Exceção do tipo FileNotFoundException capturada");
-            }
-            catch (IOException)
-            {
-                Console.WriteLine("Exceção do tipo IOException capturada");
-            }
-            finally
-            {
-                if(leitor != null)
-                    leitor.Fechar();
-            }
+
+            // ------------------------------------------------------------
+            //LeitorDeArquivo leitor = new LeitorDeArquivo("contas.txt");
+            //LeitorDeArquivo leitor2 = null;
+            //try
+            //{
+            //    leitor2.LerProximaLinha();
+            //    leitor2.LerProximaLinha();
+            //    leitor2.LerProximaLinha();
+            //}
+            //catch (FileNotFoundException)
+            //{
+            //    Console.WriteLine("Exceção do tipo FileNotFoundException capturada");
+            //}
+            //catch (IOException)
+            //{
+            //    Console.WriteLine("Exceção do tipo IOException capturada");
+            //}
+            //finally
+            //{
+            //    Console.WriteLine("Executando o finally");
+
+            //    if (leitor2 != null)
+            //        leitor2.Fechar();
+            //}
         }
 
         public static void TestaInnerException()

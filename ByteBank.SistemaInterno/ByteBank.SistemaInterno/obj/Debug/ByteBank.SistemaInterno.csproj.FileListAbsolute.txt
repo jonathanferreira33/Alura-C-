@@ -1,0 +1,10 @@
+C:\Users\Jonathan\source\repos\ByteBank.SistemaInterno\ByteBank.SistemaInterno\bin\Debug\ByteBank.SistemaInterno.exe.config
+C:\Users\Jonathan\source\repos\ByteBank.SistemaInterno\ByteBank.SistemaInterno\bin\Debug\ByteBank.SistemaInterno.exe
+C:\Users\Jonathan\source\repos\ByteBank.SistemaInterno\ByteBank.SistemaInterno\bin\Debug\ByteBank.SistemaInterno.pdb
+C:\Users\Jonathan\source\repos\ByteBank.SistemaInterno\ByteBank.SistemaInterno\bin\Debug\ByteBank.Modelos.dll
+C:\Users\Jonathan\source\repos\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\ByteBank.SistemaInterno.csproj.AssemblyReference.cache
+C:\Users\Jonathan\source\repos\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\ByteBank.SistemaInterno.csproj.SuggestedBindingRedirects.cache
+C:\Users\Jonathan\source\repos\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\ByteBank.SistemaInterno.csproj.CoreCompileInputs.cache
+C:\Users\Jonathan\source\repos\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\ByteBank.SistemaInterno.csproj.CopyComplete
+C:\Users\Jonathan\source\repos\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\ByteBank.SistemaInterno.exe
+C:\Users\Jonathan\source\repos\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\ByteBank.SistemaInterno.pdb

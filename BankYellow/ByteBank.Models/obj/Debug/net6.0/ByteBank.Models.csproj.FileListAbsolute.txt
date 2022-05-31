@@ -1,0 +1,11 @@
+C:\Users\Jonathan\source\repos\BankYellow\ByteBank.Models\obj\Debug\net6.0\ByteBank.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jonathan\source\repos\BankYellow\ByteBank.Models\obj\Debug\net6.0\ByteBank.Models.AssemblyInfoInputs.cache
+C:\Users\Jonathan\source\repos\BankYellow\ByteBank.Models\obj\Debug\net6.0\ByteBank.Models.AssemblyInfo.cs
+C:\Users\Jonathan\source\repos\BankYellow\ByteBank.Models\obj\Debug\net6.0\ByteBank.Models.csproj.CoreCompileInputs.cache
+C:\Users\Jonathan\source\repos\BankYellow\ByteBank.Models\bin\Debug\net6.0\ByteBank.Models.deps.json
+C:\Users\Jonathan\source\repos\BankYellow\ByteBank.Models\bin\Debug\net6.0\ByteBank.Models.dll
+C:\Users\Jonathan\source\repos\BankYellow\ByteBank.Models\bin\Debug\net6.0\ref\ByteBank.Models.dll
+C:\Users\Jonathan\source\repos\BankYellow\ByteBank.Models\bin\Debug\net6.0\ByteBank.Models.pdb
+C:\Users\Jonathan\source\repos\BankYellow\ByteBank.Models\obj\Debug\net6.0\ByteBank.Models.dll
+C:\Users\Jonathan\source\repos\BankYellow\ByteBank.Models\obj\Debug\net6.0\ref\ByteBank.Models.dll
+C:\Users\Jonathan\source\repos\BankYellow\ByteBank.Models\obj\Debug\net6.0\ByteBank.Models.pdb

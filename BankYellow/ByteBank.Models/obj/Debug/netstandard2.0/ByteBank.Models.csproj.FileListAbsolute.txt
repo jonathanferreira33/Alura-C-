@@ -1,0 +1,5 @@
+C:\Users\Jonathan\source\repos\BankYellow\ByteBank.Models\obj\Debug\netstandard2.0\ByteBank.Models.csproj.AssemblyReference.cache
+C:\Users\Jonathan\source\repos\BankYellow\ByteBank.Models\obj\Debug\netstandard2.0\ByteBank.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jonathan\source\repos\BankYellow\ByteBank.Models\obj\Debug\netstandard2.0\ByteBank.Models.AssemblyInfoInputs.cache
+C:\Users\Jonathan\source\repos\BankYellow\ByteBank.Models\obj\Debug\netstandard2.0\ByteBank.Models.AssemblyInfo.cs
+C:\Users\Jonathan\source\repos\BankYellow\ByteBank.Models\obj\Debug\netstandard2.0\ByteBank.Models.csproj.CoreCompileInputs.cache
