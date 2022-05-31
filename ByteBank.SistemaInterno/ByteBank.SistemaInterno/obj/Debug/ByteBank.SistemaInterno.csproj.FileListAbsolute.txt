@@ -8,3 +8,7 @@ C:\Users\Jonathan\source\repos\ByteBank.SistemaInterno\ByteBank.SistemaInterno\o
 C:\Users\Jonathan\source\repos\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\ByteBank.SistemaInterno.csproj.CopyComplete
 C:\Users\Jonathan\source\repos\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\ByteBank.SistemaInterno.exe
 C:\Users\Jonathan\source\repos\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\ByteBank.SistemaInterno.pdb
+C:\Users\Jonathan\source\repos\ByteBank.SistemaInterno\ByteBank.SistemaInterno\bin\Debug\ByteBank.Modelos.xml
+C:\Users\Jonathan\source\repos\ByteBank.SistemaInterno\ByteBank.SistemaInterno\bin\Debug\Humanizer.dll
+C:\Users\Jonathan\source\repos\ByteBank.SistemaInterno\ByteBank.SistemaInterno\bin\Debug\Humanizer.xml
+C:\Users\Jonathan\source\repos\ByteBank.SistemaInterno\ByteBank.SistemaInterno\bin\Debug\pt\Humanizer.resources.dll
