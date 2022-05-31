@@ -17,3 +17,10 @@
 - Como a CLR preenche a propriedade StackTrace;
 - O padrão de inner exceptions;
 - O terceiro construtor que as exceções devem ter: (string mensagem, Exception excecaoInterna);
+
+- Os comentários de documentação ///;
+- O elemento de documentação <summary/>;
+- O elemento <param/>;
+- O elemento <paramref/>;
+- O elemento <exception/>;
+- O elemento <see/>.
